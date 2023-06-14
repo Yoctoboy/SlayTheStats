@@ -1,13 +1,8 @@
-import { useState } from 'react'
-import ArchiveDropzone from './ArchiveDropzone'
+import { useState } from 'react';
+import HomePage from './components/HomePage/HomePage';
 
 function App() {
-
-  return (
-    <>
-      <ArchiveDropzone />
-    </>
-  )
+  return <HomePage />;
 }
 
-export default App
+export default App;
