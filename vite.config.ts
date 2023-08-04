@@ -6,10 +6,11 @@ export default defineConfig({
   plugins: [
     react({
       jsxImportSource: '@emotion/react',
-      include: 'src/**/*.tsx'
+      include: 'src/**/*.tsx',
+      jsxRuntime: 'classic'
     })
   ],
-  server: { watch: { usePolling: true }, port: 3000 },
+  server: { port: 3000 },
   publicDir: 'public',
   optimizeDeps: {
     include: ['react', '@emotion/styled']
